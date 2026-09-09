@@ -11,8 +11,10 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top main-navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
-                ALPINE ASCENTS
+                <img src="images/logo.png" alt="Alpine Ascents Logo">
+                <span>ALPINE ASCENTS</span>
             </a>
+           
             <button class="navbar-toggler" type="Button"
                     data-bs-toggle="collapse"
                     data-bs-target="#mainNavbar">
@@ -50,6 +52,9 @@
                         </li>
                     </ul>
                 </div>
+                 <div class="visitor-info">
+                <span>Visitors: <span id="visitor-count">0</span></span>
+            </div>
         </div>
     </nav>
     <section id="home" class="hero">
@@ -210,7 +215,7 @@
                     <h3>Alpine Club of Pakistan</h3>
                     <p class="organization-location">Pakistan</p>
                     <p>A mountaineering organization involved in promoting climbing, trekking and mountain activitiesin Pakistan.</p>
-                    <a href="#" class="organization-link">View Location</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Alpine+Club+of+Pakistan+Pakistan" target="_blank" class="organization-link">View Location</a>
                 </div>
             </div>
 
@@ -219,7 +224,7 @@
                     <h3>American Alpine Club</h3>
                     <p class="organization-location">United States</p>
                     <p>An organization supporing climbers mountaineersand mountain communities through climbing programs and advocacy.</p>
-                    <a href="#" class="organization-link">View Location</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=American+Alpine+Club+United+States" target="_blank" class="organization-link">View Location</a>
                 </div>
             </div>
 
@@ -228,7 +233,7 @@
                     <h3>Alpine Club</h3>
                     <p class="organization-location">United Kingdom</p>
                     <p>A historic climbing orginization supporting mountaineering, climbing and exploration</p>
-                    <a href="#" class="organization-link">View Location</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Alpine+Club+United+Kingdom" target="_blank" class="organization-link">View Location</a>
                 </div>
             </div>
 
@@ -435,5 +440,17 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <div class="location-ticker">
+        <div class="ticker-content">
+            Date: <span id="current-date">Loading...</span>
+            &nbsp; | &nbsp;
+            Time: <span id="current-time">Loading...</span>
+            &nbsp; | &nbsp;
+            Location: <span id="current-location">Loading...</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

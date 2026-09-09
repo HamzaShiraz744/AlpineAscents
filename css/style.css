@@ -42,12 +42,23 @@
 .main-navbar{
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(8px);
-    padding: 15px 0;
+    padding: 5px 0;
 }
 .main-navbar .navbar-brand{
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 2px;
+}
+.main-navbar .navbar-brand img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.main-navbar .main-navbar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .main-navbar .nav-link{
     color: white;
@@ -59,6 +70,11 @@
 }
 .main-navbar .nav-linkactive{
     color: #f4c542;
+}
+.main-navbar .container{
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .about-section{
     padding: 100px 0;
@@ -312,4 +328,51 @@
 .development-card:hover{
     transform translateY(-8px);
     border-color: #f4c542;
+}
+.location-ticker{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100;
+    background: #111;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 9999;
+    padding: 10px 0;
+}
+.ticker-content{
+    display: inline-block;
+    animation: ticker 20s linear infinite;
+}
+@keyframes ticker{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
+.visitor-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 0.9rem;
+}
+.visitor-info img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.visitor-info{
+    margin-left: 30px;
+    padding: 8px 15px;
+    border: 1px solid #f4c542;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
 }
