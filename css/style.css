@@ -68,7 +68,7 @@
 .main-navbar .nav-link:hover {
     color: #f4c542;
 }
-.main-navbar .nav-linkactive{
+.main-navbar .nav-link.active{
     color: #f4c542;
 }
 .main-navbar .container{
@@ -333,17 +333,25 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100;
-    background: #111;
+    width: 100%;
+    background: #0b0b0b;
     color: white;
+    padding: 12px 20px;
+    border-top: 1px solid #333;
     overflow: hidden;
     white-space: nowrap;
     z-index: 9999;
-    padding: 10px 0;
 }
 .ticker-content{
     display: inline-block;
     animation: ticker 20s linear infinite;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.ticker-content span{
+    color: #f4c542;
+    font-weight: 600;
 }
 @keyframes ticker{
     from{
@@ -375,4 +383,28 @@
     color: white;
     font-weight: 600;
     white-space: nowrap;
+}
+.footer{
+    background: #0b0b0b;
+    color: white;
+    padding: 50px 20px 30px;
+    text-align: center;
+}
+.footer h3{
+    color: #f4c542;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.footer p{
+    color: #aaa;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.footer p:last-child{
+    font-size: 0.rem;
+    margin-top: 20px;
+}
+body {
+    padding-bottom: 45px;
 }

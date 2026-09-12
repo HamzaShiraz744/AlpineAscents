@@ -39,3 +39,4 @@ if (!window.sessionStorage.getItem("visited")){
     window.sessionStorage.setItem("visited", "true");
 }    
 document.getElementById("visitor-count").textContent = visitors;
+
