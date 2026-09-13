@@ -330,7 +330,7 @@
     border-color: #f4c542;
 }
 .location-ticker{
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -405,6 +405,11 @@
     font-size: 0.rem;
     margin-top: 20px;
 }
-body {
-    padding-bottom: 45px;
+.location-ticker{
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.about-section .row{
+    justify-content: center;
 }

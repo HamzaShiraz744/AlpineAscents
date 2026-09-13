@@ -40,3 +40,14 @@ if (!window.sessionStorage.getItem("visited")){
 }    
 document.getElementById("visitor-count").textContent = visitors;
 
+const navbar = document.getElementById("mainNavbar");
+
+document.querySelectorAll(".main-navbar .nav-link").forEach(function(link) {
+    link.addEventListener("click", function() {
+        const collapse = bootstrap.Collapse.getInstance(navbar);
+
+        if (collapse) {
+            collapse.hide();
+        }
+    });
+});
