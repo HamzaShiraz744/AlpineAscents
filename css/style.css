@@ -166,8 +166,8 @@
     padding: 30px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba{0, 0, 0, 0.08};
-    transition: transform 0.3s ease, box shadow 0.3 ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .organization-card h3{
     font-size: 1.4rem;
@@ -188,7 +188,7 @@
     color: #111;
     font-weight: 600;
     text-decoration: none;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
 }
 .organization-link:hover{
     color: #f4c542;
@@ -256,7 +256,7 @@
     transition: transform 0.5s ease;
 }
 .gallery-card:hover img{
-    transform scale(1.15);
+    transform: scale(1.15);
 }
 .guidelines-section{
     padding: 80px 0;
@@ -314,7 +314,7 @@
     background: #1c1c1c;
     border: 1px solid #333;
     border-radius: 12px;
-    transition: transform 0.3s ease, border-color 0.3 ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 .development-card h3{
     font-size: 1.4rem;
@@ -326,7 +326,7 @@
     margin-bottom: 0;
 }
 .development-card:hover{
-    transform translateY(-8px);
+    transform: translateY(-8px);
     border-color: #f4c542;
 }
 .location-ticker{
@@ -355,10 +355,11 @@
 }
 @keyframes ticker{
     from{
-        transform: translateY(0);
+        transform: translateX(100%);
     }
+
     to{
-        transform: translateX(-100);
+        transform: translateX(-100%);
     }
 }
 .visitor-info{
@@ -402,7 +403,7 @@
     line-height: 1.6;
 }
 .footer p:last-child{
-    font-size: 0.rem;
+    font-size: 0.9rem;
     margin-top: 20px;
 }
 .location-ticker{
@@ -412,4 +413,52 @@
 }
 .about-section .row{
     justify-content: center;
+}
+@media (max-width: 768px) {
+
+    .main-navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        margin-right: 5px;
+    }
+
+    .main-navbar .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-navbar .navbar-brand span {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    .main-navbar .visitor-info {
+        margin-left: auto;
+        margin-right: 8px;
+        padding: 5px 9px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    .main-navbar .navbar-toggler {
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .main-navbar .visitor-info {
+        order: 1;
+    }
+
+    .main-navbar .navbar-toggler {
+        order: 2;
+    }
+
+    .main-navbar .collapse {
+        order: 3;
+    }
+
 }

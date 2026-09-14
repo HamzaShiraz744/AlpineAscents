@@ -49,5 +49,23 @@ document.querySelectorAll(".main-navbar .nav-link").forEach(function(link) {
         if (collapse) {
             collapse.hide();
         }
+
+        document.querySelectorAll(".main-navbar .nav-link").forEach(function(item) {
+    item.classList.remove("active");
+});
+
+this.classList.add("active");
+    });
+});
+
+const homeLink = document.querySelector('.main-navbar .nav-link[href="#home"]');
+
+homeLink.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
     });
 });
